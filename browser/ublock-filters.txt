@@ -1,0 +1,13 @@
+! Crunchyroll's manga reading quick-fix
+www.crunchyroll.com##.pagination-icon:style(height:1rem !important;width:1rem !important;)
+www.crunchyroll.com##.js-info-button.info-button
+www.crunchyroll.com##.pagination-icon.type-next:style(padding: 8px !important;)
+www.crunchyroll.com##article:style(flex-direction:row-reverse !important;)
+www.crunchyroll.com##.js-direction-dependent.pagination-indicators
+www.crunchyroll.com##.js-fullscreen-toggle.fullscreen-toggle > span
+www.crunchyroll.com##.type-on.fullscreen-icon:style(margin-left: 0 !important)
+www.crunchyroll.com###template_container:style(max-width: none !important)
+www.crunchyroll.com###template_scroller:style(margin: 0 !important)
+www.crunchyroll.com###manga_reader:style(height: 100vh !important)
+www.crunchyroll.com##.chapter-header:style(padding:0 2rem !important)
+

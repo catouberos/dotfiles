@@ -83,10 +83,3 @@ osd.hilight.bg: Solid Flat
 osd.hilight.bg.color: #42495a
 osd.unhilight.bg: Solid Flat
 osd.unhilight.bg.color: #0d1321
-
-# ------------------------------------------------------
-# Fonts
-window.active.label.text.font:shadow=y:shadowtint=70:shadowoffset=1
-window.inactive.label.text.font:shadow=y:shadowtint=20:shadowoffset=1
-menu.items.font:
-menu.title.text.font:shadow=y:shadowtint=70

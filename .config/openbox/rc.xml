@@ -325,7 +325,7 @@
     <!-- Screenshot -->
     <keybind key="Print">
       <action name="Execute">
-        <command>flameshot full -c</command>
+        <command>flameshot screen -c</command>
       </action>
     </keybind>
     <keybind key="S-Print">

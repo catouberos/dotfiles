@@ -6,6 +6,6 @@ killall -q polybar
 # Wait until the processes have been shut down
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-polybar -r bar --config=config &
+polybar -r bar --config=$HOME/.config/polybar/themes/san/config.ini &
 
 echo "Polybar launched..."

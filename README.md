@@ -1,6 +1,6 @@
 # Catou's dotfiles
 
-Using [BitBucket dotfiles backup method](https://www.atlassian.com/git/tutorials/dotfiles
+Using [BitBucket dotfiles backup method](https://www.atlassian.com/git/tutorials/dotfiles)
 
 Polybar theme based on [kaddae's san](https://github.com/kiddae/polybar-themes)
 

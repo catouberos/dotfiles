@@ -40,3 +40,6 @@ autoload -Uz compinit && compinit
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 alias config='/usr/bin/git --git-dir=/home/catou/.cfg/ --work-tree=/home/catou'
+
+# user script bin
+export PATH="$HOME/.bin:$PATH"

@@ -1,0 +1,17 @@
+directory: /home/p1/music
+library: ~/data/musiclibrary.db
+plugins: fetchart embedart convert
+import:
+  move: yes
+match:
+  strong_rec_thresh: 0.15
+fetchart:
+  maxwidth: 1024
+  max_filesize: 1000000
+  sources:
+    - coverart: release
+    - itunes
+    - coverart: releasegroup
+    - filesystem
+convert:
+  dest: /home/p1/transcode

@@ -15,6 +15,9 @@ end
 config.font = wezterm.font 'JetBrainsMono Nerd Font'
 config.color_scheme = 'catppuccin-macchiato'
 
+-- https://github.com/wez/wezterm/issues/4483#issuecomment-1835619115
+config.enable_wayland = true
+
 -- and finally, return the configuration to wezterm
 return config
 

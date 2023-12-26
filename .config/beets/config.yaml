@@ -1,6 +1,4 @@
-directory: /home/p1/music
-library: ~/data/musiclibrary.db
-plugins: fetchart embedart convert
+plugins: fetchart embedart convert mpdupdate
 import:
   move: yes
 match:
@@ -13,5 +11,7 @@ fetchart:
     - itunes
     - coverart: releasegroup
     - filesystem
-convert:
-  dest: /home/p1/transcode
+mpd:
+    host: localhost
+    port: 6600
+

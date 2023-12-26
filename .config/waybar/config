@@ -1,9 +1,10 @@
 {
     "layer": "top",
-    "modules-left": ["hyprland/workspaces", "hyprland/window"],
-    "modules-right": ["tray", "wireplumber", "mpd", "clock"],
-    "height": 28,
-    "spacing": 0,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-right": ["tray", "mpd", "wireplumber", "clock"],
+    "margin": "12 12 0 12",
+    "height": 24,
+    "spacing": 6,
     "clock": {
         "format-alt": "{:%a, %d. %b  %H:%M}"
     },
@@ -14,13 +15,19 @@
         "format": "{dynamic}",
         "dynamic-len": 72,
 	"status-icons": {
-            "paused": "⏸"
+            "paused": "⏸️"
 	}
+    },
+    "mpd": {
+        "max-length": 60,
+        "format-paused": "(ㅅ´ ˘ `)",
+        "format-stopped": "( ｡ •̀ ᴖ •́ ｡)",
+        "format-disconnected": "(ᵕ—ᴗ—)"
     },
     "wireplumber": {
         "format": "{volume}% {icon}",
-        "format-muted": "",
-        "on-click": "helvum",
-        "format-icons": ["", "", ""]
+        "format-muted": "🔇",
+        "scroll-step": 5.0,
+        "format-icons": ["🔈", "🔉", "🔊"]
     }
 }

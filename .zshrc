@@ -24,10 +24,6 @@ alias l='ls -CF'
 # https://github.com/zsh-users/zsh-syntax-highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# https://github.com/zsh-users/zsh-autosuggestions
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-eval "$(atuin init zsh)"
 eval "$(starship init zsh)"
 
 # autocomplete
@@ -39,7 +35,10 @@ autoload -Uz compinit && compinit
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-alias config='/usr/bin/git --git-dir=/home/catou/.cfg/ --work-tree=/home/catou'
 
-# user script bin
-export PATH="$HOME/.bin:$PATH"
+# dotfiles config
+# https://www.atlassian.com/git/tutorials/dotfiles
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# pywal
+(cat ~/.cache/wal/sequences &)

@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "modules-left": ["hyprland/workspaces"],
-    "modules-right": ["tray", "mpd", "wireplumber", "clock"],
+    "modules-right": ["tray", "mpris", "wireplumber", "clock"],
     "margin": "12 12 0 12",
     "height": 24,
     "spacing": 6,
@@ -20,6 +20,7 @@
     },
     "mpd": {
         "max-length": 60,
+        "format": "{artist} - {title}",
         "format-paused": "(ㅅ´ ˘ `)",
         "format-stopped": "( ｡ •̀ ᴖ •́ ｡)",
         "format-disconnected": "(ᵕ—ᴗ—)"
@@ -28,6 +29,7 @@
         "format": "{volume}% {icon}",
         "format-muted": "🔇",
         "scroll-step": 5.0,
-        "format-icons": ["🔈", "🔉", "🔊"]
+        "format-icons": ["🔈", "🔉", "🔊"],
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
     }
 }

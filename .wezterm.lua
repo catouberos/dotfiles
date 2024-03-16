@@ -1,5 +1,5 @@
 -- Pull in the wezterm API
-local wezterm = require 'wezterm'
+local wezterm = require("wezterm")
 
 -- This table will hold the configuration.
 local config = {}
@@ -7,17 +7,16 @@ local config = {}
 -- In newer versions of wezterm, use the config_builder which will
 -- help provide clearer error messages
 if wezterm.config_builder then
-  config = wezterm.config_builder()
+	config = wezterm.config_builder()
 end
 
 -- This is where you actually apply your config choices
 
-config.font = wezterm.font 'JetBrainsMono Nerd Font'
-config.color_scheme = 'catppuccin-macchiato'
+config.font = wezterm.font("JetBrainsMono Nerd Font")
+config.font_size = 10.5
+config.color_scheme = "catppuccin-macchiato"
 
--- https://github.com/wez/wezterm/issues/4483#issuecomment-1835619115
-config.enable_wayland = true
+config.window_background_opacity = 0.9
 
 -- and finally, return the configuration to wezterm
 return config
-
